@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Define la frase a cifrar y el desplazamiento
+# Define la frase a cifrar y el desplazamiento o inserta un archivo
+# echo -n “Si quieres cifrar un archivo oprime 1, si no, inserta escribe la frase que quieras cifrar : “
+# read anr
+# if [ ! -f $1]
+# then 
 frase="HOLA MUNDO"
 desplazamiento=3
 
