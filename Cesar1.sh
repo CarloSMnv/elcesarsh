@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# Define la frase a cifrar y el desplazamiento o inserta un archivo
-# echo -n “Si quieres cifrar un archivo oprime 1, si no, inserta escribe la frase que quieras cifrar : “
-# read anr
-# if [ ! -f $1]
-# then 
+# Define la frase a cifrar y el desplazamiento o inserta un archivo para cifrar
+read -p ‘Ingresa lo que quieras cifrar: ‘ user
+read -sp ‘Presiona 2 para ingresar un archivo: ‘ pass
+if (( $user== “1” &amp&amp $pass== “2” ))
+then
+     echo -e “\nSuccessful login”
+else
+     echo -e “\nUnsuccessful login”
 frase="HOLA MUNDO"
 desplazamiento=3
 
