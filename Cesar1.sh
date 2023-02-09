@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Define la frase a cifrar y el desplazamiento o inserta un archivo para cifrar
-read -p 'Presiona cualquier tecla para comenzar el cifrado, o presiona 1 para ingrear un archivo de origen  ‘ opt
+echo -n "Presiona cualquier tecla para comenzar el cifrado, o presiona 1 para ingrear un archivo de origen  "
+read otp
 if (( $opt== “1”))
 then
      if [ ! -f $1 ]
