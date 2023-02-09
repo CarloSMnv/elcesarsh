@@ -1,14 +1,17 @@
 #!/bin/bash
 
 # Define la frase a cifrar y el desplazamiento o inserta un archivo para cifrar
-read -p ‘Ingresa lo que quieras cifrar: ‘ user
-read -sp ‘Presiona 2 para ingresar un archivo: ‘ pass
-if (( $user== “1” &amp&amp $pass== “2” ))
+read -p 'Presiona cualquier tecla para comenzar el cifrado, o presiona 1 para ingrear un archivo de origen  ‘ opt
+if (( $opt== “1”))
 then
-     echo -e “\nSuccessful login”
+     if [ ! -f $1 ]
+     then
+          echo "NO existe archivo de origen: $1"
+     else
+          
 else
-     echo -e “\nUnsuccessful login”
-frase="HOLA MUNDO"
+echo -n "Escribe lo que quieras cifrar "
+read frase
 desplazamiento=3
 
 # Convierte la frase a mayúsculas
