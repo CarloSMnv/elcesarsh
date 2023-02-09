@@ -6,9 +6,7 @@ if (( $opt== “1”))
 then
      if [ ! -f $1 ]
      then
-          echo "NO existe archivo de origen: $1"
-     else
-          
+          echo "NO existe archivo de origen: $1"         
 else
 echo -n "Escribe lo que quieras cifrar "
 read frase
