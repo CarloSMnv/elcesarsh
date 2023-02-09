@@ -1,10 +1,6 @@
 #!/bin/bash
 # Define la frase a cifrar y el desplazamiento o inserta un archivo para cifrar
-read -p "Please enter sd: " otp
-if (( $opt== “sd”))
-then     
-echo -n "Escribe lo que quieras cifrar "
-read frase
+read -p "Ingresa lo que quieras cifrar " frase
 desplazamiento=3
 
 # Convierte la frase a mayúsculas
